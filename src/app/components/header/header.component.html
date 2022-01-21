@@ -1,0 +1,18 @@
+<div class="alert alert-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="app-clickable" [routerLink]="['/home']"> Walkey-Talkie</h3>
+            </div>
+            <div class="col-md-8">
+                <form (submit)="submitHandler($event)">
+                    <input type="text" name="queryTerm" 
+                    class="form-control" placeholder="search"
+                    [(ngModel)]="queryTerm"
+                    autofocus
+                    >
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
